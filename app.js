@@ -12,7 +12,7 @@ app.use('/static', express.static('public'));
 
 //GET routes
 app.get('/', (req,res) =>{
-    res.render('index');
+    res.render('index', {projects});
 })
 
 app.get('/about', (req,res) =>{
@@ -22,9 +22,9 @@ app.get('/about', (req,res) =>{
 app.get('/project/:id', (req,res) =>{
     const { id } = req.params; //what project is this?
     const project = projects[id]; //snags the matching project from the JSON
-    const { project_name } = project;
-    const { description } = project;
-    const {technologies } = project;
+    const {project_name} = project;
+    const {description} = project;
+    const {technologies} = project;
     const {live_link} = project;
     const {github_link} = project;
     const {image_urls} = project;
