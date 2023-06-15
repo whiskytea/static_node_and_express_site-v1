@@ -5,7 +5,7 @@
         "id": 0,
         "project_name": "Quote Generator",
         "description": "A simple one page site that cycles random quotes",
-        "technologies": "HTML, Vanilla Javascript",
+        "technologies": ["HTML", "Vanilla Javascript"],
         "live_link": "/quoteGenerator",
         "github_link": "https://github.com/whiskytea/QUOTEGEN",
         "image_urls": ["quote1.png", "quote2.png"]
@@ -14,7 +14,7 @@
         "id": 1,
         "project_name": "Connect Four Game",
         "description": "A traditional two player game: Connect Four.",
-        "technologies": "HTML, Vanilla Javascript",
+        "technologies": ["HTML", "Vanilla Javascript"],
         "live_link": "/connectFour",
         "github_link": "https://github.com/whiskytea/CONNECTFOUR",
         "image_urls": ["connect1.png", "connect2.png"]
@@ -23,7 +23,7 @@
         "id": 2,
         "project_name": "Phrase Hunter Game",
         "description": "A simple phrase guessing game.",
-        "technologies": "HTML, Vanilla Javascript",
+        "technologies": ["HTML", "Vanilla Javascript"],
         "live_link": "/phraseHunter",
         "github_link": "https://github.com/whiskytea/OOP-GAME-SHOW-APP",
         "image_urls": ["phrase1.png", "phrase2.png"]
@@ -32,7 +32,7 @@
         "id": 3,
         "project_name": "Flash Cards",
         "description": "A flashcard site that utilizes the basics of Node.JS and NPM, as well as pug templates",
-        "technologies": "HTML, Node.JS, NPM, Pug",
+        "technologies": ["HTML", "Node.JS", "NPM", "Pug"],
         "live_link": "/flashCards",
         "github_link": "https://github.com/whiskytea/flashcards",
         "image_urls": ["quote1.png", "quote2.png"]
@@ -41,7 +41,7 @@
         "id": 4,
         "project_name": "Student Directory",
         "description": "A single page site that generates a student directory and demonstrates pagination.",
-        "technologies": "HTML, Vanilla Javascript",
+        "technologies": ["HTML", "Vanilla Javascript"],
         "live_link": "/pagination",
         "github_link": "https://github.com/whiskytea/Data-Pagination-and-Filtering",
         "image_urls": ["pagination1.png", "pagination2.png"]
@@ -50,7 +50,7 @@
         "id": 5,
         "project_name": "Employee Directory",
         "description": "A simple one page site that displays a list of employees. Uses a modal to display an employee in an overlay and the directory is searchable.",
-        "technologies": "HTML, Vanilla Javascript, APIs",
+        "technologies": ["HTML", "Vanilla Javascript", "Fetch and APIs"],
         "live_link": "/APIRequests",
         "github_link": "https://github.com/whiskytea/project-5-Public-API-requests",
         "image_urls": ["api1.png", "api2.png"]
@@ -59,7 +59,7 @@
         "id": 6,
         "project_name": "Interactive Form",
         "description": "A single page conference sign up form.",
-        "technologies": "HTML, Vanilla Javascript",
+        "technologies": ["HTML", "Vanilla Javascript"],
         "live_link": "/interactiveForm",
         "github_link": "https://github.com/whiskytea/interactive-form",
         "image_urls": ["form1.png", "form2.png"]
