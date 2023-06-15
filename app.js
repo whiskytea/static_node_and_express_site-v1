@@ -2,10 +2,10 @@
 const express = require('express');
 const app = express();
 app.set('view engine', 'pug');
-
+app.use(express.json());
 //get the project JSON
-// const { data } = require('data.json');
-// const { projects } = data;
+const { data } = require('./data/data.json');
+const { projects } = data;
 
 //set static access to the imgs,css, js
 app.use('/static', express.static('public'));
