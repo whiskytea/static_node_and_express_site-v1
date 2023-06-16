@@ -33,7 +33,7 @@
         "project_name": "Flash Cards",
         "description": "A flashcard site that utilizes the basics of Node.JS and NPM, as well as pug templates",
         "technologies": ["HTML", "Node.JS", "NPM", "Pug"],
-        "live_link": "https://whiskytea.github.io/flashcards/",
+        "live_link": "/flashcards",
         "github_link": "https://github.com/whiskytea/flashcards",
         "image_urls": ["quote1.png", "quote2.png"]
       },

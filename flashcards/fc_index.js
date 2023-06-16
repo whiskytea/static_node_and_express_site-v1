@@ -1,41 +1,40 @@
 const express = require('express');
 const router = express.Router();
 
-
 router.get('/hello', (req,res)=>{
     const name = req.cookies['name'];
     if (name) {
         res.redirect('/');
     } else {
-        res.render('hello');
+        res.render('../flashcards/views/hello');
     }
 })
 
 router.get('/', (req, res)=>{
     const name = req.cookies['name'];
     if (name) {
-        res.render('index', {name});
+        res.render('../flashcards/views/index', {name});
     }else{
-        res.redirect('/hello');
+        res.redirect('/flashcards/hello');
     }
 })
 
 router.post('/signOut', (req,res) =>{
     res.clearCookie('name');
-    res.redirect('/hello');
+    res.redirect('/flashcards/hello');
 })
 
 router.post('/cards', (req,res)=>{
-    res.redirect('/card');
+    res.redirect('flashcards//card');
 })
 
 router.post('/home', (req, res)=>{
     res.cookie('name', req.body.name);
-    res.redirect('/');
+    res.redirect('/flashcards');
 })
 
 router.post('/homepage', (req,res)=>{
-    res.redirect('/');
+    res.redirect('/flashcards');
 });
 
 

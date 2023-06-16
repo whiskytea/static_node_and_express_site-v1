@@ -2,7 +2,7 @@ const express = require('express');
 const flashcards = express.Router;
 
 
-const mainRoutes = require("./index");
+const mainRoutes = require("./fc_index");
 const cardRoutes = require("./cards");
 
 

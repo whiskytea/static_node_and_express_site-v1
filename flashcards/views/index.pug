@@ -1,15 +1,15 @@
 doctype html
 head
     title Flash Cards
-    link(rel='stylesheet' href='/static/stylesheets/style.css')
+    link(rel='stylesheet' href='/fc-static/stylesheets/style.css')
 header
-    img(src='/static/img/logo.png')
+    img(src='/fc-static/img/logo.png')
     p An flashcards to help you study
 section.namecard
     .namecard-hello
         p.namecard-greeting Welcome #{name}!
-        form.namecard-exit(action='/signOut' method='POST')
+        form.namecard-exit(action='/flashcards/signOut' method='POST')
             button(type='submit')
-                img(src='/static/img/close.svg')
+                img(src='/fc-static/img/close.svg')
     h1.namecard-prompt Let&apos;s get started
-    a.namecard-submit(href='/card') Begin!
+    a.namecard-submit(href='/flashcards/card') Begin!

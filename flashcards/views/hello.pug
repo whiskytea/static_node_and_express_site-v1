@@ -1,14 +1,14 @@
 doctype html
 head
     title Flash Cards
-    link(rel='stylesheet' href='/static/stylesheets/style.css')
+    link(rel='stylesheet' href='/fc-static/stylesheets/style.css')
 header
-    img(src='/static/img/logo.png')
+    img(src='/fc-static/img/logo.png')
     p An flashcards to help you study
 section.namecard
     .namecard-hello
         p.namecard-greeting Hello, student!
-    form.namecard-form(action='/home' method='post')
+    form.namecard-form(action='/flashcards/home' method='post')
         label.namecard-prompt
             | Please enter your name:
         input.namecard-name(type='text' name='name')

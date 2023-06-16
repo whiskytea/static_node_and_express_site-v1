@@ -1,16 +1,16 @@
 doctype html
 head
     title Flash Cards
-    link(rel='stylesheet' href='/static/stylesheets/style.css')
+    link(rel='stylesheet' href='/fc-static/stylesheets/style.css')
 header
-    img(src='/static/img/logo.png')
+    img(src='/fc-static/img/logo.png')
     p An flashcards to help you study
 section.namecard
     .namecard-hello
         p.namecard-greeting Welcome #{name}!
-        form.namecard-exit(action='/signOut' method='POST')
+        form.namecard-exit(action='/flashcards/signOut' method='POST')
             button(type='submit')
-                img(src='/static/img/close.svg')
+                img(src='/fc-static/img/close.svg')
 section.flashcards
     .card.card-answer
         .card-header
@@ -18,9 +18,9 @@ section.flashcards
         #content
             h2 #{text}
         .card-flip-wrap
-            a(href=`/card/${id}?side=question`)
-                img.card-flip(src='/static/img/flip.svg')
+            a(href=`/flashcards/card/${id}?side=question`)
+                img.card-flip(src='/fc-static/img/flip.svg')
         .card-next
-            a(href=`/card?id=${id}`)
-                img(src='/static/img/next.svg')
-    script(src='flashcards.js')
+            a(href=`/flashcards/card?id=${id}`)
+                img(src='/fc-static/img/next.svg')
+

@@ -1,14 +1,14 @@
 doctype html
 head
     title Flash Cards
-    link(rel='stylesheet' href='/static/stylesheets/style.css')
+    link(rel='stylesheet' href='/fc-static/stylesheets/style.css')
 header
-    img(src='/static/img/logo.png')
+    img(src='/fc-static/img/logo.png')
     p An flashcards to help you study
 section.desk
     h1= `${error.message} - Status: ${error.status}`
-    img.desk-items(src='/static/img/desk.svg')
-    a.button-primary-small(href='/') Go Home
+    img.desk-items(src='/fc-static/img/desk.svg')
+    a.button-primary-small(href='/flashcards') Go Home
     .paper
         pre.stack-trace= error.stack
 

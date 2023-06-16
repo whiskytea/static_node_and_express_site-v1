@@ -13,12 +13,12 @@ app.use(express.json());
 //get the project JSON
 const { data } = require('./data/data.json');
 const { projects } = data;
-const flashcards = require('./flashcards');
-const mainRoutes = require("./flashcards/index");
+const mainRoutes = require("./flashcards/fc_index");
 const cardRoutes = require("./flashcards/cards");
 
 //set static access to the imgs,css, js
 app.use('/static', express.static('public'));
+app.use('/fc-static', express.static('../flashcards/public'))
 app.use('/flashcards', mainRoutes);
 app.use('/flashcards/card', cardRoutes);
 

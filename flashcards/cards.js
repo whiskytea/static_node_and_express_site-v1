@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { data } = require('./data/flashcardData.json');
+const { data } = require('../flashcards/data/flashcardData.json');
 const { cards } = data;
 
 router.get('/:id', (req,res) => {
@@ -8,7 +8,7 @@ router.get('/:id', (req,res) => {
     const { id } = req.params; //what card is this?
     const name = req.cookies.name;
     if(side.toLowerCase() !== 'question' && side.toLowerCase() !== 'answer'){ //what to load when there is no query string, or the query string is wrong
-        res.redirect(`/card/${id}?side=question`);
+        res.redirect(`/flashcards/card/${id}?side=question`);
     }else{
 
         const text = cards[id][side]; //get the card info
@@ -18,11 +18,11 @@ router.get('/:id', (req,res) => {
             templateData.hint = hint;
             templateData.displaySide = side.toUpperCase();
             templateData.otherSide = 'answer'
-            res.render('card-front', templateData);
+            res.render('../flashcards/views/card-front', templateData);
         }else{ //load the answer
             templateData.displaySide = side.toUpperCase();
             templateData.otherSide = 'question'
-            res.render('card-back', templateData);
+            res.render('../flashcards/views/card-back', templateData);
         }
     }
 });
@@ -36,7 +36,7 @@ router.get('/', (req,res) =>{
     }
     if (!id){
         //if we're coming from the home page, load a random card
-        const url = `/card/${getRandomInt(cardNum)}?side=question`;
+        const url = `/flashcards/card/${getRandomInt(cardNum)}?side=question`;
         res.redirect(url);
     }else{
         //if the user is clicking the "get a new card" button, make sure we don't repeat
@@ -44,7 +44,7 @@ router.get('/', (req,res) =>{
         do{
             newCard = getRandomInt(cardNum);
         }while(newCard === currentCard)
-        const url = `/card/${newCard}?side=question`;
+        const url = `/flashcards/card/${newCard}?side=question`;
         res.redirect(url);
     }
 
