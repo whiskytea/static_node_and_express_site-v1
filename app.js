@@ -3,20 +3,24 @@ const express = require('express');
 
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
-app.use(bodyParser.urlencoded({ extended: false}));
-app.use(cookieParser());
+
 
 const app = express();
+app.use(bodyParser.urlencoded({ extended: false}));
+app.use(cookieParser());
 app.set('view engine', 'pug');
 app.use(express.json());
 //get the project JSON
 const { data } = require('./data/data.json');
 const { projects } = data;
 const flashcards = require('./flashcards');
+const mainRoutes = require("./flashcards/index");
+const cardRoutes = require("./flashcards/cards");
 
 //set static access to the imgs,css, js
 app.use('/static', express.static('public'));
-app.use('/flashcards', flashcards)
+app.use('/flashcards', mainRoutes);
+app.use('/flashcards/card', cardRoutes);
 
 //GET routes
 app.get('/', (req,res) =>{
