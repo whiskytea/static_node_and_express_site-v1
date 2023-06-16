@@ -1,0 +1,26 @@
+doctype html
+head
+    title Flash Cards
+    link(rel='stylesheet' href='/static/stylesheets/style.css')
+header
+    img(src='/static/img/logo.png')
+    p An app to help you study
+section.namecard
+    .namecard-hello
+        p.namecard-greeting Welcome #{name}!
+        form.namecard-exit(action='/signOut' method='POST')
+            button(type='submit')
+                img(src='/static/img/close.svg')
+section.flashcards
+    .card.card-answer
+        .card-header
+        h1.card-title Answer
+        #content
+            h2 #{text}
+        .card-flip-wrap
+            a(href=`/card/${id}?side=question`)
+                img.card-flip(src='/static/img/flip.svg')
+        .card-next
+            a(href=`/card?id=${id}`)
+                img(src='/static/img/next.svg')
+    script(src='app.js')

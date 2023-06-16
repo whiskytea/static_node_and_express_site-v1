@@ -1,0 +1,13 @@
+extends layout.pug
+
+block content
+    h1 #{displaySide}
+    h3 #{text}
+    if hint
+        p Hint: #{hint}
+
+    a(href=`${id}?side=${otherSide}`)
+        p #{otherSide}
+
+    a(href=`/card?id=${id}`)
+        p try a different flashcard
