@@ -1,13 +1,15 @@
 # static_node_and_express_site-v1
-Unit 6 project - Static Node/Express Site
+//Unit 6 project - Static Node/Express Site
 Grade: Exceed Expectations
 
 This is a portfolio site that showcases the first few units of homework assignments. I also included a connect four game from the Javascript Track, and the Flashcards
 App used to teach us Express in the unit 6 module. The Flash cards app does not run in github pages, so I refactored it to run in this app.
 
 
-Extra credit:
+//Extra credit:
 NPM Start works to run the app
+
+Error/'Page not found' views exist and errors serve those pages with status messages. 
 
 Stylization:
 Whisky Tea is the brand identity I'm considering running with, so I have custom made the logo myself. The error page image is hand drawn. 
