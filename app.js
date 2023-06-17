@@ -1,16 +1,16 @@
 //set up the app to use Express and Pug
 const express = require('express');
-
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
 
-
+//run the app
 const app = express();
 app.use(bodyParser.urlencoded({ extended: false}));
 app.use(cookieParser());
 app.set('view engine', 'pug');
 app.use(express.json());
-//get the project JSON
+
+//axillary requires
 const { data } = require('./data/data.json');
 const { projects } = data;
 const mainRoutes = require("./flashcards/fc_index");
@@ -18,6 +18,8 @@ const cardRoutes = require("./flashcards/cards");
 
 //set static access to the imgs,css, js
 app.use('/static', express.static('public'));
+
+//the flashcards app doesn't work on github pages, so I refactored it to run in this app instead
 app.use('/fc-static', express.static('../flashcards/public'))
 app.use('/flashcards', mainRoutes);
 app.use('/flashcards/card', cardRoutes);
@@ -45,13 +47,12 @@ app.get('/project/:id', (req,res) =>{
     res.render('project', templateData);
 })
 
-//custom middleware
+//error handling
 app.use((req,res,next) => {
     const err = new Error('Not Found');
     err.status = 404;
     next(err);
 })
-
 
 app.use((err, req, res, next) => {
     res.locals.error = err;

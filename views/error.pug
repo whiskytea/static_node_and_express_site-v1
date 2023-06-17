@@ -12,7 +12,7 @@ block content
             .error-image
                 img(src='/static/img/wt_error.png' alt='404 error - spilled glass of Whisky Tea')
             .error-info
-                h3 Error: 500
+                h3 Error: #{error.status} | #{error.message}
                 h5 Stack Trace: #{error.stack}
 
 
