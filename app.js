@@ -48,7 +48,7 @@ app.get('/project/:id', (req,res) =>{
 //custom middleware
 app.use((req,res,next) => {
     const err = new Error('Not Found');
-    err.status = 505;
+    err.status = 404;
     next(err);
 })
 

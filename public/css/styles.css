@@ -328,19 +328,26 @@ nav a span {
   margin: 0 auto;
 }
 
-error-other{
-  padding: 100px;
+.error-other{
   display: flex;
-  flex-flow: column;
-}
-
-.error-other hr{
-  width: 550px;
+  flex-direction: column;
+  padding-left: 100px;
+  padding-right: 200px;
 }
 
 .error-other img{
   width: 550px;
   margin: 0 auto;
+}
+
+.error-image{
+  flex: 1;
+  width: 100%;
+}
+
+.error-info{
+  flex: 2;
+  width: 100%;
 }
 
 /* 
