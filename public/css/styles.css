@@ -21,7 +21,6 @@ body {
   font-weight: normal;
   line-height: 1.5;
   color: #0a0a0a;
-  background: #fefefe;
   background: #000;
   transform: translateX(0px);
   transition: all 0.4s ease-out;
@@ -64,6 +63,7 @@ a {
   height: 100%;
   min-height: 100%;
   background: #fefefe;
+
 }
 
 .flex-row-wrap {
@@ -151,7 +151,6 @@ nav a span {
 .sidebar .thumbnail {
   width: 100%;
   max-width: 250px;
-  border: 4px solid #fff;
 }
 
 .dev-intro-box {
@@ -161,6 +160,7 @@ nav a span {
 .sidebar h5 {
   color: #fefefe;
   margin: 0 auto 0.5rem;
+  text-align: center;
 }
 
 .sidebar p {
@@ -247,7 +247,7 @@ nav a span {
   font-size: 13px;
   letter-spacing: 2.25px;
   text-transform: uppercase;
-  color: #222;;
+  color: #222;
   margin: 0 auto 8px;
 }
 
@@ -266,6 +266,12 @@ nav a span {
 /* 
   About and project pages styles 
 */
+
+.displayWordmark{
+  display: none;
+}
+
+
 .about-intro-box p,
 .project-info-box p {
   font-size: 125%;
@@ -273,7 +279,8 @@ nav a span {
 
 .about-bio p {
   font-size: 15px;
-  padding-top: 40px;
+  padding-top: 10px;
+  width: 90%;
 }
 
 .skills-contact-box ul {
@@ -345,6 +352,8 @@ nav a span {
   Desktop layout styles 
 */
 @media screen and (min-width: 1024px) {
+
+
   .sidebar {
     left: 0;
   }
@@ -360,5 +369,20 @@ nav a span {
 
   .inner-wrapper {
     max-width: 1200px;
+  }
+
+  .displayWordmark{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .displayWordmark{
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 10px;
   }
 }

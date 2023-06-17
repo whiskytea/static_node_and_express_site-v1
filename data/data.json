@@ -3,57 +3,48 @@
     "projects": [
       {
         "id": 0,
-        "project_name": "Quote Generator",
-        "description": "A simple one page site that cycles random quotes",
-        "technologies": ["HTML", "Vanilla Javascript"],
-        "live_link": "https://whiskytea.github.io/QUOTEGEN/",
-        "github_link": "https://github.com/whiskytea/QUOTEGEN",
-        "image_urls": ["quote1.png", "quote2.png"]
-      },
-      {
-        "id": 1,
-        "project_name": "Connect Four Game",
-        "description": "A traditional two player game: Connect Four.",
-        "technologies": ["HTML", "Vanilla Javascript"],
-        "live_link": "https://whiskytea.github.io/CONNECTFOUR/",
-        "github_link": "https://github.com/whiskytea/CONNECTFOUR",
-        "image_urls": ["connect1.png", "connect2.png"]
-      },
-      {
-        "id": 2,
-        "project_name": "Phrase Hunter Game",
-        "description": "A simple phrase guessing game.",
-        "technologies": ["HTML", "Vanilla Javascript"],
-        "live_link": "https://whiskytea.github.io/OOP-GAME-SHOW-APP/",
-        "github_link": "https://github.com/whiskytea/OOP-GAME-SHOW-APP",
-        "image_urls": ["hunter1.png", "hunter2.png"]
-      },
-      {
-        "id": 3,
-        "project_name": "Flash Cards",
-        "description": "A flashcard site that utilizes the basics of Node.JS and NPM, as well as pug templates",
-        "technologies": ["HTML", "Node.JS", "NPM", "Pug"],
-        "live_link": "/flashcards",
-        "github_link": "https://github.com/whiskytea/flashcards",
-        "image_urls": ["quote1.png", "quote2.png"]
-      },
-      {
-        "id": 4,
-        "project_name": "Student Directory",
-        "description": "A single page site that generates a student directory and demonstrates pagination.",
-        "technologies": ["HTML", "Vanilla Javascript"],
-        "live_link": "https://whiskytea.github.io/Data-Pagination-and-Filtering/",
-        "github_link": "https://github.com/whiskytea/Data-Pagination-and-Filtering",
-        "image_urls": ["pagination1.png", "pagination2.png"]
-      },
-      {
-        "id": 5,
         "project_name": "Employee Directory",
         "description": "A simple one page site that displays a list of employees. Uses a modal to display an employee in an overlay and the directory is searchable.",
         "technologies": ["HTML", "Vanilla Javascript", "Fetch and APIs"],
         "live_link": "https://whiskytea.github.io/project-5-Public-API-requests/",
         "github_link": "https://github.com/whiskytea/project-5-Public-API-requests",
-        "image_urls": ["api1.png", "api2.png"]
+        "image_urls": ["api0.png","api1.png", "api2.png"]
+      },
+      {
+        "id": 1,
+        "project_name": "Flash Cards",
+        "description": "A flashcard site that utilizes the basics of Node.JS and NPM, as well as pug templates",
+        "technologies": ["HTML", "Node.JS", "NPM", "Pug"],
+        "live_link": "/flashcards",
+        "github_link": "https://github.com/whiskytea/flashcards",
+        "image_urls": ["flashcards0.png","flashcards1.png", "flashcards2.png"]
+      },
+      {
+        "id": 2,
+        "project_name": "Connect Four Game",
+        "description": "A traditional two player game: Connect Four.",
+        "technologies": ["HTML", "Vanilla Javascript"],
+        "live_link": "https://whiskytea.github.io/CONNECTFOUR/",
+        "github_link": "https://github.com/whiskytea/CONNECTFOUR",
+        "image_urls": ["connect0.png","connect1.png", "connect2.png"]
+      },
+      {
+        "id": 3,
+        "project_name": "Phrase Hunter Game",
+        "description": "A simple phrase guessing game.",
+        "technologies": ["HTML", "Vanilla Javascript"],
+        "live_link": "https://whiskytea.github.io/OOP-GAME-SHOW-APP/",
+        "github_link": "https://github.com/whiskytea/OOP-GAME-SHOW-APP",
+        "image_urls": ["hunter0.png","hunter1.png", "hunter2.png"]
+      },
+      {
+        "id": 5,
+        "project_name": "Student Directory",
+        "description": "A single page site that generates a student directory and demonstrates pagination.",
+        "technologies": ["HTML", "Vanilla Javascript"],
+        "live_link": "https://whiskytea.github.io/Data-Pagination-and-Filtering/",
+        "github_link": "https://github.com/whiskytea/Data-Pagination-and-Filtering",
+        "image_urls": ["pagination0.png","pagination1.png", "pagination2.png"]
       },
       {
         "id": 6,
@@ -62,7 +53,16 @@
         "technologies": ["HTML", "Vanilla Javascript"],
         "live_link": "https://whiskytea.github.io/interactive-form/",
         "github_link": "https://github.com/whiskytea/interactive-form",
-        "image_urls": ["form1.png", "form2.png"]
+        "image_urls": ["form0.png","form1.png", "form2.png"]
+      },
+      {
+        "id": 7,
+        "project_name": "Quote Generator",
+        "description": "A simple one page site that cycles random quotes",
+        "technologies": ["HTML", "Vanilla Javascript"],
+        "live_link": "https://whiskytea.github.io/QUOTEGEN/",
+        "github_link": "https://github.com/whiskytea/QUOTEGEN",
+        "image_urls": ["quote0.png","quote1.png", "quote2.png"]
       }
     ]
   }
