@@ -38,7 +38,7 @@
         "image_urls": ["hunter0.png","hunter1.png", "hunter2.png"]
       },
       {
-        "id": 5,
+        "id": 4,
         "project_name": "Student Directory",
         "description": "A single page site that generates a student directory and demonstrates pagination.",
         "technologies": ["HTML", "Vanilla Javascript"],
@@ -47,7 +47,7 @@
         "image_urls": ["pagination0.png","pagination1.png", "pagination2.png"]
       },
       {
-        "id": 6,
+        "id": 5,
         "project_name": "Interactive Form",
         "description": "A single page conference sign up form.",
         "technologies": ["HTML", "Vanilla Javascript"],
@@ -56,7 +56,7 @@
         "image_urls": ["form0.png","form1.png", "form2.png"]
       },
       {
-        "id": 7,
+        "id": 6,
         "project_name": "Quote Generator",
         "description": "A simple one page site that cycles random quotes",
         "technologies": ["HTML", "Vanilla Javascript"],
