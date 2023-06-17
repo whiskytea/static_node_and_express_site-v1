@@ -307,6 +307,41 @@ nav a span {
   border: 1px solid transparent;
 }
 
+/*
+  Error page styles
+ */
+
+.error-404{
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  text-align: center;
+}
+
+.error-404 hr{
+  width: 550px;
+}
+
+.error-404 img{
+  width: 550px;
+  margin: 0 auto;
+}
+
+error-other{
+  padding: 100px;
+  display: flex;
+  flex-flow: column;
+}
+
+.error-other hr{
+  width: 550px;
+}
+
+.error-other img{
+  width: 550px;
+  margin: 0 auto;
+}
 
 /* 
   Tablet layout styles 

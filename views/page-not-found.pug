@@ -1,1 +1,20 @@
 extends layout.pug
+
+block content
+
+    nav.nav
+        a(href='/')
+            span &larr;
+            |  Back
+
+    article.portfolio-about
+        .error-404
+            img(src='/static/img/wt_error.png' alt='404 error - spilled glass of Whisky Tea')
+            br
+            hr
+            br
+            h3 oh no! this page doesn't exist.
+            h5 Error: #{error.status}
+
+
+

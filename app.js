@@ -45,6 +45,26 @@ app.get('/project/:id', (req,res) =>{
     res.render('project', templateData);
 })
 
+//custom middleware
+app.use((req,res,next) => {
+    const err = new Error('Not Found');
+    err.status = 505;
+    next(err);
+})
+
+
+app.use((err, req, res, next) => {
+    res.locals.error = err;
+    const status = err.status || 500;
+    res.status(status);
+    if (status === 500){
+        res.render('error', err);
+    } else{
+        res.render('page-not-found', err);
+    }
+})
+
+
 app.listen(3000, ()=>{
     console.log('The application is running on localhost 3000');
 });
