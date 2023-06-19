@@ -3,17 +3,17 @@
 */
 @font-face {
   font-family: "Aquire";
-  src: url("/Aquire.otf");
+  src: url("../Aquire.woff");
 }
 
 @font-face {
   font-family: "Aquire Light";
-  src: url("/Aquire-Light.otf");
+  src: url("../Aquire-Light.woff");
 }
 
 @font-face {
   font-family: "Aquire Bold";
-  src: url("/Aquire-Bold.otf");
+  src: url("../Aquire-Bold.woff");
 }
 
 :root {

@@ -58,10 +58,13 @@ app.use((err, req, res, next) => {
     res.locals.error = err;
     const status = err.status || 500;
     res.status(status);
+    console.log(`Error: ${err.status} --- ${err.message}`)
     if (status === 500){
         res.render('error', err);
+        next();
     } else{
         res.render('page-not-found', err);
+        next();
     }
 })
 
